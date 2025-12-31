@@ -9,202 +9,120 @@
 </head>
 
 <body>
-    <!-- NAVBAR -->
-    <nav>
-        <div class="nav-logo">Peiyuan Zhao</div>
-        <div class="nav-links">
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#about">About</a>
-            <a href="https://github.com/PhotoerZz" target="_blank" rel="noopener noreferrer">GitHub</a>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="nav-logo">Peiyuan Zhao</div>
+    <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="https://github.com/PhotoerZz" target="_blank">GitHub</a>
+    </div>
+</nav>
+
+<!-- HEADER -->
+<header>
+    <h1>Hi, I’m Peiyuan</h1>
+    <div class="subtitle">Gameplay Programmer · Game Developer Intern</div>
+    <p class="intro">
+        I’m a game design student at RIT focused on gameplay programming and system design.
+        I enjoy building core mechanics, polishing game feel, and turning ideas into playable games.
+    </p>
+</header>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects-grid">
+
+        <!-- Ape in Space -->
+        <div class="project-card">
+            <h3>Ape in Space</h3>
+            <img src="img/Ape In Space.png" alt="Ape in Space gameplay" class="project-img">
+
+            <span class="tag">MonoGame</span>
+            <span class="tag">C#</span>
+            <span class="tag">Award</span>
+
+            <p>
+                An award-winning top-down shooter built from scratch using MonoGame,
+                focusing on gameplay systems and state management.
+            </p>
+
+            <ul>
+                <li>Implemented custom game loop and game states</li>
+                <li>Built enemy behaviors, collision handling, and UI systems</li>
+                <li>Awarded <strong>Outstanding Creative Project</strong> at RIT</li>
+            </ul>
         </div>
-    </nav>
 
-    <!-- HEADER -->
-    <header>
-        <h1>Hi, I’m Peiyuan</h1>
-        <div class="subtitle">Gameplay Programmer · Game Developer Intern</div>
+        <!-- U are Fired -->
+        <div class="project-card">
+            <h3>U are Fired</h3>
+            <img src="img/U are Fired.png" alt="U are Fired gameplay" class="project-img">
 
-        <p class="intro">
-            I’m a game design student at RIT focused on gameplay programming and technical design.
-            I like building core systems (combat, states, enemies), polishing game feel, and shipping playable
-            prototypes.
-            (Yes, I also enjoy debugging at 2AM… sometimes.)
+            <span class="tag">Unity 2D</span>
+            <span class="tag">C#</span>
+            <span class="tag">Game Jam</span>
+
+            <p>
+                A Unity game created during a game jam, emphasizing fast iteration,
+                responsive combat, and clear player feedback.
+            </p>
+
+            <ul>
+                <li>Implemented player movement and combat timing</li>
+                <li>Designed enemy behaviors and damage systems</li>
+                <li>Polished gameplay feel based on playtesting feedback</li>
+            </ul>
+        </div>
+
+        <!-- Night Escape -->
+        <div class="project-card">
+            <h3>Night Escape</h3>
+            <img src="img/Nightescape.png" alt="Night Escape gameplay" class="project-img">
+
+            <span class="tag">Unity 3D</span>
+            <span class="tag">C#</span>
+
+            <p>
+                A Unity 3D prototype focused on player movement, camera control,
+                and interactive gameplay in a 3D environment.
+            </p>
+
+            <ul>
+                <li>Implemented 3D player controller and camera behavior</li>
+                <li>Designed level flow and interactive objectives</li>
+                <li>Focused on atmosphere and player guidance</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+
+    <div class="about-box">
+        <p>
+            I’m interested in gameplay programming and technical design,
+            especially combat systems, enemy behaviors, and player feedback loops.
         </p>
 
-        <div class="cta-row">
-            <!-- 把下面链接换成你真实的简历/作品链接（如果暂时没有就先留着） -->
-            <a class="btn" href="#projects">See Projects</a>
-            <a class="btn secondary" href="https://bbzzqqc.itch.io/ape-space" target="_blank"
-                rel="noopener noreferrer">Play ApeSpace</a>
-        </div>
-    </header>
+        <p>
+            I’m currently looking for internships related to game development
+            or gameplay programming.
+        </p>
+    </div>
+</section>
 
-    <!-- PROJECTS -->
-    <section id="projects">
-        <div class="section-title">
-            <h2>Projects</h2>
-            <small>My strongest work first (because recruiters are busy)</small>
-        </div>
+<!-- FOOTER -->
+<footer>
+    © 2025 Peiyuan Zhao · Built with HTML & CSS
+</footer>
 
-        <div class="grid">
-            <!-- ApeSpace (MonoGame) -->
-            <div class="card">
-                <h3>ApeSpace</h3>
-                <span class="tag">MonoGame</span>
-                <span class="tag">C#</span>
-                <span class="tag">Award</span>
-
-                <p>
-                    A top-down shooter built from scratch in MonoGame, focusing on gameplay systems and state
-                    management.
-                </p>
-
-                <ul>
-                    <li>Implemented custom game loop and game states (menu / gameplay / pause)</li>
-                    <li>Built enemies, collisions, UI updates, and moment-to-moment gameplay flow</li>
-                    <li><strong>Awarded “Outstanding Creative Project” at RIT</strong></li>
-                </ul>
-
-                <p class="meta">
-                    Links:
-                    <a href="https://bbzzqqc.itch.io/ape-space" target="_blank" rel="noopener noreferrer">itch.io</a>
-                    ·
-                    <a href="https://github.com/PhotoerZz" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </p>
-            </div>
-
-            <!-- U are Fired (Unity 2D - Game Jam) -->
-            <div class="card">
-                <h3>U are Fired</h3>
-                <span class="tag">Unity 2D</span>
-                <span class="tag">C#</span>
-                <span class="tag">Game Jam</span>
-
-                <p>
-                    A Unity jam game with a focus on responsive combat, readable feedback, and fast iteration under time
-                    pressure.
-                </p>
-
-                <ul>
-                    <li>Implemented player control + combat timing (cooldowns / hit logic)</li>
-                    <li>Designed enemy behaviors and damage/health handling</li>
-                    <li>Polished “game feel” based on playtest feedback (clarity + responsiveness)</li>
-                </ul>
-
-                <p class="meta">
-                    Tip: downloads don’t matter for jams — iteration speed + solid systems do.
-                </p>
-
-                <p class="meta">
-                    Link:
-                    <a href="https://github.com/PhotoerZz" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <a href="https://photoer.itch.io/you-are-fired" target="_blank" rel="noopener noreferrer">itch.io</a>
-                </p>
-            </div>
-
-            <!-- Unity 3D Game -->
-            <div class="card">
-                <h3>Night Escape (Unity 3D)</h3>
-                <span class="tag">Unity 3D</span>
-                <span class="tag">C#</span>
-
-                <p>
-                    A 3D prototype focused on player movement, camera control, and interactive gameplay moments in a 3D
-                    space.
-                </p>
-
-                <ul>
-                    <li>Implemented 3D player movement + camera behavior</li>
-                    <li>Designed interactive objectives and basic AI/encounter flow</li>
-                    <li>Focused on readability and atmosphere (player guidance + pacing)</li>
-                </ul>
-
-                <p class="meta">
-                    Link:
-                    <a href="https://github.com/PhotoerZz" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </p>
-            </div>
-
-            <!-- Machete (3D Asset) -->
-            <div class="card">
-                <h3>Machete (3D Asset)</h3>
-                <span class="tag">Maya</span>
-                <span class="tag">Substance Painter</span>
-
-                <p>
-                    A 3D machete created with a full modeling → UV → texturing workflow, finished in Substance Painter.
-                </p>
-
-                <ul>
-                    <li>Modeled in Maya with clean topology</li>
-                    <li>UV unwrapped for efficient texturing</li>
-                    <li>Textured in Substance Painter (materials + wear details)</li>
-                </ul>
-
-                <p class="meta">
-                    Link:
-                    <a href="https://sketchfab.com/" target="_blank" rel="noopener noreferrer">Sketchfab</a>
-                    <span style="color:#999;">(replace with your real profile/model link)</span>
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills">
-        <div class="section-title">
-            <h2>Skills</h2>
-            <small>Listed by “what I can actually ship”</small>
-        </div>
-
-        <div class="box two-col">
-            <div>
-                <h3>Game Development</h3>
-                <ul>
-                    <li>Unity (C#): gameplay systems, combat, enemies, iteration</li>
-                    <li>MonoGame: game loop, state management, gameplay flow</li>
-                    <li>Debugging: logs, breakpoints, fixing “why is this null??”</li>
-                </ul>
-            </div>
-
-            <div>
-                <h3>Web / 3D</h3>
-                <ul>
-                    <li>HTML + CSS + JavaScript: DOM-based mini games</li>
-                    <li>Maya: modeling + UV workflows</li>
-                    <li>Substance Painter: texturing pipeline</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about">
-        <div class="section-title">
-            <h2>About Me</h2>
-            <small>What I’m aiming for</small>
-        </div>
-
-        <div class="box">
-            <p>
-                I’m looking for internships related to <strong>gameplay programming</strong> or <strong>technical game
-                    development</strong>.
-                I enjoy building reusable systems, improving game feel, and learning through prototypes.
-            </p>
-
-            <p class="meta">
-                Contact: <strong>zz8927@rit.edu</strong> ·
-                GitHub: <a href="https://github.com/PhotoerZz" target="_blank" rel="noopener noreferrer">PhotoerZz</a>
-                <!-- 如果你有 LinkedIn： · <a href="YOUR_LINKEDIN" target="_blank" rel="noopener noreferrer">LinkedIn</a> -->
-            </p>
-        </div>
-    </section>
-
-    <footer>
-        © 2025 Peiyuan Zhao · Built with HTML & CSS
-    </footer>
-</body>
 </body>
 
 </html>
