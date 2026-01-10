@@ -1,4 +1,4 @@
-/* ===== GLOBAL ===== */
+/*  GLOBAL  */
 body {
     margin: 0;
     font-family: "Segoe UI", Arial, sans-serif;
@@ -21,7 +21,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* ===== NAVBAR ===== */
+/*  NAVBAR  */
 nav {
     background-color: #1f1f1f;
     color: white;
@@ -48,7 +48,7 @@ nav {
     color: #fff;
 }
 
-/* ===== HEADER ===== */
+/* HEADER */
 header {
     text-align: center;
     padding: 70px 20px 50px;
@@ -70,14 +70,14 @@ header h1 {
     font-size: 16px;
 }
 
-/* ===== SECTION ===== */
+/* SECTION */
 section {
     max-width: 1000px;
     margin: auto;
     padding: 50px 20px;
 }
 
-/* ===== PROJECTS ===== */
+/* PROJECTS */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -113,7 +113,7 @@ ul {
     padding-left: 20px;
 }
 
-/* ===== ABOUT / SKILLS ===== */
+/* ABOUT / SKILLS  */
 .about-box {
     background: white;
     border-radius: 14px;
@@ -123,7 +123,7 @@ ul {
     margin: auto;
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER  */
 footer {
     text-align: center;
     padding: 28px;
