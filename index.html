@@ -3,161 +3,1370 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peiyuan Zhao | Game Dev Portfolio</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Peiyuan Zhao - Gameplay Programmer and Game Developer portfolio."
+    >
+
+    <title>Peiyuan Zhao | Gameplay Programmer</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
 </head>
+
 
 <body>
 
-    <!-- NAVBAR -->
-    <nav>
-        <div class="nav-logo">Peiyuan Zhao</div>
-        <div class="nav-links">
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#about">About</a>
-            <a href="https://github.com/PhotoerZz" target="_blank">GitHub</a>
+    <!-- Mouse Glow -->
+    <div
+        class="cursor-glow"
+        id="cursorGlow"
+    ></div>
+
+    <!-- Background Grid -->
+    <div class="background-grid"></div>
+
+
+    <!-- =====================================
+         NAVIGATION
+    ====================================== -->
+
+    <nav class="navbar">
+
+        <a
+            href="#"
+            class="nav-logo"
+        >
+            PEIYUAN ZHAO<span>.</span>
+        </a>
+
+
+        <div class="nav-right">
+
+            <div class="nav-links">
+
+                <a
+                    href="#projects"
+                    data-en="Work"
+                    data-zh="项目"
+                >
+                    Work
+                </a>
+
+                <a
+                    href="#about"
+                    data-en="About"
+                    data-zh="关于"
+                >
+                    About
+                </a>
+
+                <a
+                    href="#skills"
+                    data-en="Skills"
+                    data-zh="技能"
+                >
+                    Skills
+                </a>
+
+                <a
+                    href="https://github.com/PhotoerZz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
+
+            </div>
+
+
+            <!-- Theme / Language Controls -->
+            <div class="site-controls">
+
+                <button
+                    class="control-button"
+                    id="themeToggle"
+                    aria-label="Switch theme"
+                >
+                    <span id="themeIcon">◐</span>
+                </button>
+
+                <button
+                    class="control-button language-button"
+                    id="languageToggle"
+                    aria-label="Switch language"
+                >
+                    中文
+                </button>
+
+            </div>
+
+
+            <!-- Mobile Menu -->
+            <button
+                class="mobile-menu-button"
+                id="mobileMenuButton"
+                aria-label="Open navigation"
+            >
+                <span></span>
+                <span></span>
+            </button>
+
         </div>
+
     </nav>
 
-    <!-- HEADER -->
-    <header>
-        <h1>Hi, I’m Peiyuan </h1>
-        <div class="subtitle">Gameplay Programmer · Game Developer Intern</div>
-        <p class="intro">
-            Game design student at RIT focused on gameplay programming.
-            I build playable systems, polish game feel, and ship projects in Unity and MonoGame.
-        </p>
-    </header>
 
-    <!-- PROJECTS -->
-    <section id="projects">
-        <h2>Projects</h2>
+    <!-- =====================================
+         MAIN
+    ====================================== -->
 
-        <div class="projects-grid">
+    <main>
 
-            <!-- Ape in Space -->
-            <div class="project-card">
-                <h3>Ape in Space</h3>
-                <img src="img/Ape In Space.png" class="project-img" alt="Ape in Space gameplay">
-                
-                <h4>Team Creation</h4>
-                <span class="tag">MonoGame</span>
-                <span class="tag">C#</span>
-                <span class="tag">Award</span>
 
-                <p>
-                    Award-winning top-down shooter built from scratch using MonoGame.
+        <!-- =================================
+             HERO
+        ================================== -->
+
+        <section class="hero">
+
+            <div class="hero-content reveal">
+
+
+                <!-- Eyebrow -->
+
+                <div class="eyebrow">
+
+                    <span class="status-dot"></span>
+
+                    <span
+                        data-en="GAME DESIGNER · DEVELOPER"
+                        data-zh="游戏设计师 · 游戏开发者"
+                    >
+                        GAME DESIGNER · DEVELOPER
+                    </span>
+
+                </div>
+
+
+                <!-- Main Title -->
+
+                <h1>
+
+                    <span
+                        class="hero-title-primary"
+                        data-en="I DESIGN SYSTEMS"
+                        data-zh="我设计系统"
+                    >
+                        I DESIGN SYSTEMS
+                    </span>
+
+                    <span
+                        class="hero-title-secondary"
+                        data-en="THAT BECOME PLAY."
+                        data-zh="让系统成为游戏。"
+                    >
+                        THAT BECOME PLAY.
+                    </span>
+
+                </h1>
+
+
+                <!-- Role -->
+
+                <p
+                    class="hero-role"
+                    data-en="Gameplay Programmer / Game Developer"
+                    data-zh="玩法程序员 / 游戏开发者"
+                >
+                    Gameplay Programmer / Game Developer
                 </p>
 
-                <ul>
-                    <li>Custom game loop and state management</li>
-                    <li>Enemy behaviors, collisions, UI systems</li>
-                    <li><strong>Outstanding Creative Project</strong> at RIT</li>
-                </ul>
 
-                <p>
-                    <a href="https://criticalcrouton.itch.io/ape-in-space" target="_blank">itch.io</a>
+                <!-- Description -->
+
+                <p
+                    class="hero-description"
+                    data-en="Game design student at RIT focused on gameplay programming. I build responsive gameplay systems, refine game feel, and turn prototypes into playable experiences."
+                    data-zh="RIT 游戏设计专业学生，专注于玩法程序开发。我喜欢构建具有反馈感的游戏系统、打磨游戏手感，并将原型转化为完整可玩的体验。"
+                >
+                    Game design student at RIT focused on gameplay programming.
+                    I build responsive gameplay systems, refine game feel,
+                    and turn prototypes into playable experiences.
                 </p>
+
+
+                <!-- Buttons -->
+
+                <div class="hero-actions">
+
+                    <a
+                        href="#projects"
+                        class="button button-primary"
+                    >
+                        <span
+                            data-en="View Selected Work"
+                            data-zh="查看精选项目"
+                        >
+                            View Selected Work
+                        </span>
+
+                        <span>↘</span>
+                    </a>
+
+
+                    <a
+                        href="https://github.com/PhotoerZz"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="button button-secondary"
+                    >
+                        GitHub ↗
+                    </a>
+
+                </div>
+
+
+                <!-- Metadata -->
+
+                <div class="hero-meta">
+
+
+                    <div>
+
+                        <span
+                            class="meta-label"
+                            data-en="FOCUS"
+                            data-zh="方向"
+                        >
+                            FOCUS
+                        </span>
+
+                        <span
+                            class="meta-value"
+                            data-en="Gameplay Systems"
+                            data-zh="玩法系统"
+                        >
+                            Gameplay Systems
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <span
+                            class="meta-label"
+                            data-en="STACK"
+                            data-zh="技术栈"
+                        >
+                            STACK
+                        </span>
+
+                        <span class="meta-value">
+                            Unity · C# · MonoGame
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <span
+                            class="meta-label"
+                            data-en="STATUS"
+                            data-zh="状态"
+                        >
+                            STATUS
+                        </span>
+
+                        <span
+                            class="meta-value available"
+                            data-en="Available for opportunities"
+                            data-zh="正在寻找机会"
+                        >
+                            Available for opportunities
+                        </span>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <!-- U are Fired -->
-            <div class="project-card">
-                <h3>U are Fired</h3>
-                <img src="img/U are Fired.png" class="project-img" alt="U are Fired gameplay">
-                
-                <span class="tag">Unity 2D</span>
-                <span class="tag">C#</span>
-                <span class="tag">Game Jam</span>
-                <h4>Team Creation</h4>
 
-                <p>
-                    Unity game created during a game jam with focus on responsive combat.
-                </p>
+            <!-- =================================
+                 HERO CODE WINDOW
+            ================================== -->
 
-                <ul>
-                    <li>Player control and combat timing</li>
-                    <li>Enemy behaviors and damage systems</li>
-                    <li>Fast iteration under time constraints</li>
-                </ul>
+            <div class="hero-visual reveal">
 
-                <p>
-                    <a href="https://photoer.itch.io/you-are-fired" target="_blank">itch.io</a>
-                </p>
+
+                <div class="visual-window">
+
+
+                    <!-- Window Top Bar -->
+
+                    <div class="visual-topbar">
+
+                        <div class="window-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <span class="window-title">
+                            gameplay_system.cs
+                        </span>
+
+                        <span
+                            class="window-status"
+                            data-en="● LIVE"
+                            data-zh="● 运行中"
+                        >
+                            ● LIVE
+                        </span>
+
+                    </div>
+
+
+                    <!-- Code -->
+
+                    <div class="code-preview">
+
+
+                        <div class="code-line">
+
+                            <span class="line-number">
+                                01
+                            </span>
+
+                            <span class="code-purple">
+                                public class
+                            </span>
+
+                            <span class="code-blue">
+                                &nbsp;PlayerController
+                            </span>
+
+                        </div>
+
+
+                        <div class="code-line">
+
+                            <span class="line-number">
+                                02
+                            </span>
+
+                            <span>{</span>
+
+                        </div>
+
+
+                        <div class="code-line indent">
+
+                            <span class="line-number">
+                                03
+                            </span>
+
+                            <span class="code-purple">
+                                private
+                            </span>
+
+                            <span>
+                                &nbsp;float&nbsp;
+                            </span>
+
+                            <span class="code-blue">
+                                speed
+                            </span>
+
+                            <span>
+                                &nbsp;=&nbsp;
+                            </span>
+
+                            <span class="code-green">
+                                8.0f
+                            </span>
+
+                            <span>;</span>
+
+                        </div>
+
+
+                        <div class="code-line indent">
+
+                            <span class="line-number">
+                                04
+                            </span>
+
+                            <span class="code-purple">
+                                private
+                            </span>
+
+                            <span>
+                                &nbsp;float&nbsp;
+                            </span>
+
+                            <span class="code-blue">
+                                gameFeel
+                            </span>
+
+                            <span>
+                                &nbsp;=&nbsp;
+                            </span>
+
+                            <span class="code-green">
+                                100
+                            </span>
+
+                            <span>;</span>
+
+                        </div>
+
+
+                        <div class="code-line">
+
+                            <span class="line-number">
+                                05
+                            </span>
+
+                        </div>
+
+
+                        <div class="code-line indent">
+
+                            <span class="line-number">
+                                06
+                            </span>
+
+                            <span class="code-purple">
+                                void
+                            </span>
+
+                            <span class="code-yellow">
+                                &nbsp;BuildExperience
+                            </span>
+
+                            <span>()</span>
+
+                        </div>
+
+
+                        <div class="code-line indent">
+
+                            <span class="line-number">
+                                07
+                            </span>
+
+                            <span>{</span>
+
+                        </div>
+
+
+                        <div class="code-line double-indent">
+
+                            <span class="line-number">
+                                08
+                            </span>
+
+                            <span class="code-blue">
+                                prototype
+                            </span>
+
+                            <span>.</span>
+
+                            <span class="code-yellow">
+                                Iterate
+                            </span>
+
+                            <span>();</span>
+
+                        </div>
+
+
+                        <div class="code-line double-indent">
+
+                            <span class="line-number">
+                                09
+                            </span>
+
+                            <span class="code-blue">
+                                systems
+                            </span>
+
+                            <span>.</span>
+
+                            <span class="code-yellow">
+                                Polish
+                            </span>
+
+                            <span>();</span>
+
+                        </div>
+
+
+                        <div class="code-line double-indent">
+
+                            <span class="line-number">
+                                10
+                            </span>
+
+                            <span class="code-blue">
+                                game
+                            </span>
+
+                            <span>.</span>
+
+                            <span class="code-yellow">
+                                Ship
+                            </span>
+
+                            <span>();</span>
+
+                        </div>
+
+
+                        <div class="code-line indent">
+
+                            <span class="line-number">
+                                11
+                            </span>
+
+                            <span>}</span>
+
+                        </div>
+
+
+                        <div class="code-line">
+
+                            <span class="line-number">
+                                12
+                            </span>
+
+                            <span>}</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Code Window Footer -->
+
+                    <div class="visual-footer">
+
+
+                        <div>
+
+                            <span
+                                class="small-label"
+                                data-en="BUILD"
+                                data-zh="版本"
+                            >
+                                BUILD
+                            </span>
+
+                            <strong>
+                                2026.08
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span
+                                class="small-label"
+                                data-en="ENGINE"
+                                data-zh="引擎"
+                            >
+                                ENGINE
+                            </span>
+
+                            <strong>
+                                UNITY
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span
+                                class="small-label"
+                                data-en="STATUS"
+                                data-zh="状态"
+                            >
+                                STATUS
+                            </span>
+
+                            <strong
+                                class="blue-text"
+                                data-en="READY"
+                                data-zh="就绪"
+                            >
+                                READY
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <!-- Night Escape -->
-            <div class="project-card">
-                <h3>Night Escape</h3>
-                <img src="img/Nightescape.png" class="project-img" alt="Night Escape gameplay">
+        </section>
 
-                <span class="tag">Unity 3D</span>
-                <span class="tag">C#</span>
-                <h4>Individual Creation</h4>
 
-                <p>
-                    Unity 3D prototype focused on player movement and camera control.
+        <!-- =================================
+             PROJECTS
+        ================================== -->
+
+        <section
+            class="section projects-section"
+            id="projects"
+        >
+
+
+            <div class="section-heading reveal">
+
+
+                <div>
+
+                    <span class="section-number">
+                        01
+                    </span>
+
+                    <h2
+                        data-en="Selected Work"
+                        data-zh="精选项目"
+                    >
+                        Selected Work
+                    </h2>
+
+                </div>
+
+
+                <p
+                    data-en="A selection of gameplay programming, development, and game design projects."
+                    data-zh="精选玩法程序开发、游戏开发与游戏设计项目。"
+                >
+                    A selection of gameplay programming,
+                    development, and game design projects.
                 </p>
 
-                <ul>
-                    <li>3D player controller and camera system</li>
-                    <li>Level flow and interaction design</li>
-                </ul>
-
-                <p>
-                    <a href="https://photoer.itch.io/nightfallscape" target="_blank">itch.io</a>
-                </p>
             </div>
 
-        </div>
-    </section>
 
-    <!-- SKILLS -->
-    <section id="skills">
-        <h2>Skills</h2>
+            <div class="projects-grid">
 
-        <div class="about-box">
-            <p><strong>Game Development</strong></p>
-            <ul>
-                <li>Unity (C#) – gameplay systems, combat, iteration</li>
-                <li>MonoGame – game loop, state management</li>
-            </ul>
 
-            <p><strong>Programming / Web</strong></p>
-            <ul>
-                <li>HTML, CSS, JavaScript – DOM-based games</li>
-            </ul>
+                <!-- =================================
+                     PROJECT 1
+                ================================== -->
 
-            <p><strong>3D & Art (Foundational)</strong></p>
-            <ul>
-                <li>Maya – basic modeling and UV mapping</li>
-                <li>Substance Painter – basic texturing workflow</li>
-                <li>Photoshop – basic texture and image editing</li>
-            </ul>
-            <p>
-                <a href="https://sketchfab.com/PeiyuanZhao" target="_blank">Sketchfab</a>
-            </p>
-        </div>
-    </section>
+                <article class="project-card reveal">
 
-    <!-- ABOUT -->
-    <section id="about">
-        <h2>About Me</h2>
 
-        <div class="about-box">
-            <p>
-                I’m seeking internships related to gameplay programming or game development.
-                I enjoy building systems, improving game feel, and learning through iteration.
-            </p>
-        </div>
-    </section>
+                    <a
+                        href="https://criticalcrouton.itch.io/ape-in-space"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-image-wrapper"
+                    >
+
+                        <img
+                            src="img/Ape In Space.png"
+                            alt="Ape in Space gameplay"
+                            class="project-image"
+                        >
+
+                        <div
+                            class="project-image-overlay"
+                            data-en="View Project ↗"
+                            data-zh="查看项目 ↗"
+                        >
+                            View Project ↗
+                        </div>
+
+                    </a>
+
+
+                    <div class="project-content">
+
+
+                        <div class="project-top">
+
+                            <span class="project-index">
+                                01
+                            </span>
+
+
+                            <div class="project-tags">
+
+                                <span>
+                                    MONOGAME
+                                </span>
+
+                                <span>
+                                    C#
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <h3>
+                            Ape in Space
+                        </h3>
+
+
+                        <p
+                            data-en="Award-winning top-down shooter built from scratch using MonoGame and C#."
+                            data-zh="使用 MonoGame 与 C# 从零开发的获奖俯视角射击游戏。"
+                        >
+                            Award-winning top-down shooter
+                            built from scratch using
+                            MonoGame and C#.
+                        </p>
+
+
+                        <div class="project-details">
+
+
+                            <div>
+
+                                <span
+                                    data-en="ROLE"
+                                    data-zh="职责"
+                                >
+                                    ROLE
+                                </span>
+
+                                <span
+                                    data-en="Gameplay Programmer"
+                                    data-zh="玩法程序员"
+                                >
+                                    Gameplay Programmer
+                                </span>
+
+                            </div>
+
+
+                            <div>
+
+                                <span
+                                    data-en="TYPE"
+                                    data-zh="类型"
+                                >
+                                    TYPE
+                                </span>
+
+                                <span
+                                    data-en="Team Project"
+                                    data-zh="团队项目"
+                                >
+                                    Team Project
+                                </span>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================
+                     PROJECT 2
+                ================================== -->
+
+                <article class="project-card reveal">
+
+
+                    <a
+                        href="https://photoer.itch.io/you-are-fired"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-image-wrapper"
+                    >
+
+                        <img
+                            src="img/U are Fired.png"
+                            alt="U Are Fired gameplay"
+                            class="project-image"
+                        >
+
+                        <div
+                            class="project-image-overlay"
+                            data-en="View Project ↗"
+                            data-zh="查看项目 ↗"
+                        >
+                            View Project ↗
+                        </div>
+
+                    </a>
+
+
+                    <div class="project-content">
+
+
+                        <div class="project-top">
+
+                            <span class="project-index">
+                                02
+                            </span>
+
+
+                            <div class="project-tags">
+
+                                <span>
+                                    UNITY
+                                </span>
+
+                                <span>
+                                    C#
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <h3>
+                            U Are Fired
+                        </h3>
+
+
+                        <p
+                            data-en="Fast-paced 2D action game built during a game jam, focused on responsive combat and rapid iteration."
+                            data-zh="在 Game Jam 中开发的快节奏 2D 动作游戏，重点打磨战斗反馈与快速迭代。"
+                        >
+                            Fast-paced 2D action game built
+                            during a game jam, focused on
+                            responsive combat and rapid iteration.
+                        </p>
+
+
+                        <div class="project-details">
+
+
+                            <div>
+
+                                <span
+                                    data-en="ROLE"
+                                    data-zh="职责"
+                                >
+                                    ROLE
+                                </span>
+
+                                <span
+                                    data-en="Gameplay Programmer"
+                                    data-zh="玩法程序员"
+                                >
+                                    Gameplay Programmer
+                                </span>
+
+                            </div>
+
+
+                            <div>
+
+                                <span
+                                    data-en="TYPE"
+                                    data-zh="类型"
+                                >
+                                    TYPE
+                                </span>
+
+                                <span
+                                    data-en="Game Jam"
+                                    data-zh="Game Jam"
+                                >
+                                    Game Jam
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================
+                     PROJECT 3
+                ================================== -->
+
+                <article class="project-card reveal">
+
+
+                    <a
+                        href="https://photoer.itch.io/nightfallscape"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-image-wrapper"
+                    >
+
+                        <img
+                            src="img/Nightescape.png"
+                            alt="Night Escape gameplay"
+                            class="project-image"
+                        >
+
+                        <div
+                            class="project-image-overlay"
+                            data-en="View Project ↗"
+                            data-zh="查看项目 ↗"
+                        >
+                            View Project ↗
+                        </div>
+
+                    </a>
+
+
+                    <div class="project-content">
+
+
+                        <div class="project-top">
+
+                            <span class="project-index">
+                                03
+                            </span>
+
+
+                            <div class="project-tags">
+
+                                <span>
+                                    UNITY 3D
+                                </span>
+
+                                <span>
+                                    C#
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <h3>
+                            Night Escape
+                        </h3>
+
+
+                        <p
+                            data-en="Solo Unity 3D prototype exploring player movement, camera systems, interactions, and level flow."
+                            data-zh="个人 Unity 3D 原型项目，探索角色移动、相机系统、交互设计与关卡流程。"
+                        >
+                            Solo Unity 3D prototype exploring
+                            player movement, camera systems,
+                            interactions, and level flow.
+                        </p>
+
+
+                        <div class="project-details">
+
+
+                            <div>
+
+                                <span
+                                    data-en="ROLE"
+                                    data-zh="职责"
+                                >
+                                    ROLE
+                                </span>
+
+                                <span
+                                    data-en="Designer / Programmer"
+                                    data-zh="设计师 / 程序员"
+                                >
+                                    Designer / Programmer
+                                </span>
+
+                            </div>
+
+
+                            <div>
+
+                                <span
+                                    data-en="TYPE"
+                                    data-zh="类型"
+                                >
+                                    TYPE
+                                </span>
+
+                                <span
+                                    data-en="Solo Project"
+                                    data-zh="个人项目"
+                                >
+                                    Solo Project
+                                </span>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             ABOUT
+        ================================== -->
+
+        <section
+            class="section about-section"
+            id="about"
+        >
+
+
+            <div class="section-heading reveal">
+
+                <div>
+
+                    <span class="section-number">
+                        02
+                    </span>
+
+                    <h2
+                        data-en="About"
+                        data-zh="关于我"
+                    >
+                        About
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-layout">
+
+
+                <div class="about-large-text reveal">
+
+                    <span
+                        data-en="I turn ideas into systems"
+                        data-zh="我把想法变成系统"
+                    >
+                        I turn ideas into systems
+                    </span>
+
+                    <br>
+
+                    <span
+                        data-en="and systems into playable experiences."
+                        data-zh="再把系统变成可玩的体验。"
+                    >
+                        and systems into playable experiences.
+                    </span>
+
+                </div>
+
+
+                <div class="about-copy reveal">
+
+
+                    <p
+                        data-en="I’m Peiyuan Zhao, a game design student at RIT focused on gameplay programming and interactive systems."
+                        data-zh="我是 Peiyuan Zhao，目前就读于 RIT 游戏设计专业，主要专注于玩法程序开发与交互系统。"
+                    >
+                        I’m Peiyuan Zhao, a game design student
+                        at RIT focused on gameplay programming
+                        and interactive systems.
+                    </p>
+
+
+                    <p
+                        data-en="I enjoy taking mechanics from rough prototypes to polished, readable player experiences through implementation, iteration, and testing."
+                        data-zh="我喜欢通过开发、迭代和测试，把粗糙的玩法原型逐渐打磨成清晰、完整并且有反馈感的玩家体验。"
+                    >
+                        I enjoy taking mechanics from rough
+                        prototypes to polished, readable player
+                        experiences through implementation,
+                        iteration, and testing.
+                    </p>
+
+
+                    <p
+                        data-en="I’m currently interested in gameplay programming and game development opportunities."
+                        data-zh="目前正在寻找玩法程序开发以及游戏开发相关机会。"
+                    >
+                        I’m currently interested in gameplay
+                        programming and game development opportunities.
+                    </p>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             SKILLS
+        ================================== -->
+
+        <section
+            class="section skills-section"
+            id="skills"
+        >
+
+
+            <div class="section-heading reveal">
+
+                <div>
+
+                    <span class="section-number">
+                        03
+                    </span>
+
+                    <h2
+                        data-en="Capabilities"
+                        data-zh="技能与能力"
+                    >
+                        Capabilities
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+
+                <!-- Development -->
+
+                <div class="skill-card reveal">
+
+                    <span class="skill-index">
+                        01
+                    </span>
+
+                    <h3
+                        data-en="Development"
+                        data-zh="开发"
+                    >
+                        Development
+                    </h3>
+
+                    <p>
+                        Unity<br>
+                        C#<br>
+                        MonoGame<br>
+                        Git
+                    </p>
+
+                </div>
+
+
+                <!-- Gameplay -->
+
+                <div class="skill-card reveal">
+
+                    <span class="skill-index">
+                        02
+                    </span>
+
+                    <h3
+                        data-en="Gameplay"
+                        data-zh="玩法开发"
+                    >
+                        Gameplay
+                    </h3>
+
+                    <p
+                        data-en="Player Controllers|Combat Systems|Enemy Behavior|Game State"
+                        data-zh="角色控制|战斗系统|敌人行为|游戏状态"
+                        class="multiline-language"
+                    >
+                        Player Controllers<br>
+                        Combat Systems<br>
+                        Enemy Behavior<br>
+                        Game State
+                    </p>
+
+                </div>
+
+
+                <!-- Design -->
+
+                <div class="skill-card reveal">
+
+                    <span class="skill-index">
+                        03
+                    </span>
+
+                    <h3
+                        data-en="Design"
+                        data-zh="设计"
+                    >
+                        Design
+                    </h3>
+
+                    <p
+                        data-en="Game Feel|Level Flow|Prototyping|Iteration"
+                        data-zh="游戏手感|关卡流程|原型设计|迭代"
+                        class="multiline-language"
+                    >
+                        Game Feel<br>
+                        Level Flow<br>
+                        Prototyping<br>
+                        Iteration
+                    </p>
+
+                </div>
+
+
+                <!-- Additional -->
+
+                <div class="skill-card reveal">
+
+                    <span class="skill-index">
+                        04
+                    </span>
+
+                    <h3
+                        data-en="Additional"
+                        data-zh="其他工具"
+                    >
+                        Additional
+                    </h3>
+
+                    <p>
+                        HTML / CSS / JavaScript<br>
+                        Maya<br>
+                        Substance Painter<br>
+                        Photoshop
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             CONTACT
+        ================================== -->
+
+        <section class="contact-section">
+
+
+            <div class="contact-inner reveal">
+
+
+                <span
+                    class="contact-label"
+                    data-en="HAVE A PROJECT OR OPPORTUNITY?"
+                    data-zh="有项目或合作机会？"
+                >
+                    HAVE A PROJECT OR OPPORTUNITY?
+                </span>
+
+
+                <h2>
+
+                    <span
+                        data-en="LET'S BUILD"
+                        data-zh="一起创造"
+                    >
+                        LET'S BUILD
+                    </span>
+
+                    <span
+                        data-en="SOMETHING PLAYABLE."
+                        data-zh="真正可玩的体验。"
+                    >
+                        SOMETHING PLAYABLE.
+                    </span>
+
+                </h2>
+
+
+                <div class="contact-links">
+
+
+                    <a
+                        href="https://github.com/PhotoerZz"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub ↗
+                    </a>
+
+
+                    <a
+                        href="https://sketchfab.com/PeiyuanZhao"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Sketchfab ↗
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
 
     <footer>
-        © 2025 Peiyuan Zhao · HTML & CSS
+
+
+        <div>
+
+            ©
+            <span id="currentYear"></span>
+            Peiyuan Zhao
+
+        </div>
+
+
+        <div
+            data-en="Designed & built with HTML · CSS · JavaScript"
+            data-zh="使用 HTML · CSS · JavaScript 设计与开发"
+        >
+            Designed & built with HTML · CSS · JavaScript
+        </div>
+
+
     </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 
 </body>
 
